@@ -4,7 +4,7 @@ inputRef.addEventListener('blur', onValidInputValue);
 
 function onValidInputValue(event) {
 
-    if (event.currentTarget.value.length === Number(event.currentTarget.attributes['data-length'].value)) {
+    if (event.currentTarget.value.length === parseInt(event.currentTarget.attributes['data-length'].value)) {
         event.currentTarget.classList = 'valid';
         return;
     }
